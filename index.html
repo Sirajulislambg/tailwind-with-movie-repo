@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gloock&family=Inter:wght@400;500&family=Montserrat:ital,wght@0,400;0,500;1,400&family=Oswald&family=Poppins:wght@700&family=Roboto&family=Shantell+Sans:ital,wght@0,300;1,300&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        white: '#FFFFFF',
+                        yellow: '#FECC02',
+                        black: '#131313',
+                        gray: '#4E4E4E',
+                    },
+                    fontFamily: {
+                        monsterrat: ["Gloock", "serif"],
+                        roboto: ["Roboto", "sans-serif"],
+                    },
+
+                    backgroundImage: {
+                        'bannner': "url('images/banner.jpg')",
+                        'photographer': "url('images/camera-man.jpg')",
+
+                        'fractured': "url('images/fractured.jpg')",
+                        'inception': "url('images/inception.jpg')",
+                        'interstellar': "url('images/interstellar.jpg')",
+                        'tenet': "url('images/tenet.jpg')",
+
+                        'glasss': "url('images/icons/3d-glasss.png')",
+                        'camera': "url('images/icons/camera.png')",
+                        'count-down': "url('images/icons/count-down.png')",
+                        'cut-board': "url('images/icons/cut-board.png')",
+
+                        'director-chair': "url('images/icons/director-chair.png')",
+                        'film': "url('images/icons/film.png')",
+                        'rim': "url('images/icons/rim.png')",
+                        'theater': "url('images/icons/theater.png')",
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- font-family: 'Gloock', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Tilt Warp', cursive; -->
+</head>
+
+<body>
+
+    <nav
+        class="flex justify-between px-6 md:px-24 lg:px-52 bg-amber-800 h-20 text-white items-center	font-monsterrat absolute w-full">
+        <h1 class="font-monsterrat text-2xl">Jhaka Naka Production</h1>
+        <ul class="flex font-roboto gap-4">
+            <li class="hover:text-yellow  ">About Us</li>
+            <li class="hover:text-yellow  ">Our Movies</li>
+            <li class="hover:text-yellow  ">Services</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="bg-bannner h-screen items-center flex leading-8 md:bg-cover bg-center bg-cover">
+            <div class="ml-20">
+                <p class="font-roboto text-white">Movie production studio</p>
+                <h1 class="font-monsterrat text-2xl text-white">Films MAde to <span
+                        class="text-yellow ml-4">Perfection</span></h1>
+                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                    luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <button class="mt-5 text-white border-gray p-3 font-monsterrat border-2 hover:text-black hover:bg-yellow rounded-md
+
+ hover:border-yellow transition ease-in-out delay-150">Discover More</button>
+            </div>
+        </section>
+
+
+        <!-- About section -->
+
+        <section class="border-2 m-10">
+            <div class="md:flex ">
+                <div
+                    class="m-10 bg-photographer  md:w-1/2 bg-cover h-screen md:h-[500px] flex  md:justify-center items-end bg-center">
+                    <h1 class="bg-white  rounded p-5 -mb-5 md:mx-0 mx-auto hover:bg-gray hover:text-yellow font-roboto">
+                        23 YEARS of
+                        EXPERIENCE</h1>
+                </div>
+                <div class="md:w-1/2 m-10">
+                    <p class="font-roboto text-yellow text-2xl">ABOUT US</p>
+                    <h1 class="font-monsterrat text-5xl">FIlming Experience Just Got better</h1>
+                    <p class="font-roboto">Primis lobortis adipiscing imperdiet dis ultricies. Id commodo interdum
+                        fermentum pede dictumst ipsum. Erat
+                        sapien
+                        phasellus suspendisse natoque nulla leo ornare mi. Pretium rhoncus venenatis ante dignissim
+                        aliquet faucibus
+                        tempus
+                        etiam feugiat.</p>
+                    <button class="mt-5 text-black border-gray p-3 font-monsterrat border-2 hover:text-black hover:bg-yellow rounded-md
+                                
+                                 hover:border-yellow transition ease-in-out delay-150">Discover More</button>
+
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 m-10 md:grid-cols-2  grid-cols-1">
+                <div class="border-2 border-gray p-5 mr-4">
+                    <hr class="border-2  border-yellow">
+                    <h1 class="m-5 font-monsterrat text-2xl">OUR VISIOn</h1>
+                    <p class="font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                        luctus nec ullamcorper
+                        mattis, pulvinar dapibus
+                        leo.</p>
+                </div>
+                <div class="border-2 border-gray p-5 mr-4">
+                    <hr class="border-2  border-yellow">
+                    <h1 class="m-5 font-monsterrat text-2xl">OUR Mission</h1>
+                    <p class="font-roboto">Malesuada tempus et habitant nascetur porta nec. Fusce consequat risus per
+                        sollicitudin hendrerit
+                        suscipit convallis
+                        sociosqu.</p>
+                </div>
+                <div class="border-2 border-gray p-5 mr-4">
+                    <hr class="border-2  border-yellow">
+                    <h1 class="m-5 font-monsterrat text-2xl">OUR Motto</h1>
+                    <p class="font-roboto">“We don’t make movies to make money, we make money to make more movies.”</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Movies parts -->
+
+        <section class="bg-gray h-full p-10 my-10 ">
+            <p class="text-white font-roboto ">OUR MOVIES</p>
+            <div class="flex justify-between items-center my-5">
+
+                <div class="">
+                    <h1 class="text-white font-monsterrat text-5xl">Movie collection</h1>
+                </div>
+                <div class="">
+                    <button class="mt-5 text-white border-gray p-3 font-monsterrat border-2 hover:text-black hover:bg-yellow rounded-md
+                    
+                     hover:border-yellow transition ease-in-out delay-150">Discover More</button>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-4 gap-5 md:grid-cols-2 grid-cols-1">
+                <div class="border-2  bg-center h-60   md:bg-cover md:h-48  lg:h-52  bg-fractured bg-cover">
+                </div>
+                <div class="border-2  bg-center h-60  md:bg-cover md:h-48 lg:h-52 bg-inception bg-cover"></div>
+                <div class="border-2  bg-center h-60  md:bg-cover md:h-48 lg:h-52 bg-interstellar bg-cover">
+                </div>
+                <div class="border-2  bg-center h-60  md:bg-cover md:h-48 lg:h-52 bg-tenet bg-cover"></div>
+            </div>
+        </section>
+
+
+        <!-- Movie Offer  -->
+
+        <section class="bg-gray h-full p-10 my-10">
+            <div class="text-center text-white uppercase">
+                <p class="font-roboto">services</p>
+                <h1 class="font-monsterrat text-5xl ">what we offer</h1>
+            </div>
+
+            <div class="grid lg:grid-cols-4 gap-5 md:grid-cols-2 grid-cols-1 my-5">
+               <div class="border-2 border-black h-60 md:w-60 bg-white rounded-md">
+                <div class="bg-cover flex justify-center">
+                    <img class="" src="images/icons/3d-glasss.png" alt="">
+                </div>
+                <div class="text-center p-3">
+                    <p>3D MOVIES</p>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+               </div>
+
+            <div class="border-2 border-black h-60 md:w-60 bg-white rounded-md">
+                <div class="bg-cover flex justify-center ">
+                    <img class="" src="images/icons/camera.png" alt="">
+                </div>
+                <div class="text-center p-3">
+                    <p>movies director</p>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+            </div>
+
+            <div class="border-2 border-black h-60 md:w-60 bg-white rounded-md">
+                <div class="bg-cover flex justify-center py-2 ">
+                    <img class="" src="images/icons/count-down.png" alt="">
+                </div>
+                <div class="text-center pb-1">
+                    <p>actor action</p>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+            </div>
+
+            <div class="border-2 border-black h-60 md:w-60 bg-white rounded-md">
+                <div class="bg-cover flex justify-center py-2">
+                    <img class="" src="images/icons/cut-board.png" alt="">
+                </div>
+                <div class="text-center pb-1">
+                    <p>Movie Production</p>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+            </div>
+
+            <div class="border-2 border-black h-60 md:w-60 bg-white rounded-md">
+                <div class="bg-cover flex justify-center py-2">
+                    <img class="" src="images/icons/director-chair.png" alt="">
+                </div>
+                <div class="text-center pb-1">
+                    <p>Film maker</p>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+            </div>
+
+            <div class="border-2 border-black h-60 w-full md:md:w-60 bg-white rounded-md">
+                <div class="bg-cover flex justify-center">
+                    <img class="" src="images/icons/film.png" alt="">
+                </div>
+                <div class="text-center pb-1">
+                    <p>Studio Production</p>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+            </div>
+
+
+            <div class="border-2 border-black h-60 md:w-60 bg-white rounded-md">
+                <div class="bg-cover flex justify-center">
+                    <img class="" src="images/icons/rim.png" alt="">
+                </div>
+                <div class="text-center p-3">
+                    <p>Rolling Production</p>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+            </div>
+
+            <div class="border-2 border-black h-60 md:w-60 bg-white">
+                <div class="bg-cover flex justify-center">
+                    <img class="" src="images/icons/theater.png" alt="">
+                </div>
+                <div class="text-center p-3">
+                    <p>Drama Movies</p>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+            </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray h-full p-10 my-10">
+        <div class="flex flex-col justify-around items-center ">
+            <div class="text-center">
+                <h1 class="font-monsterrat text-white text-2xl uppercase font-bold">jhaka naka production</h1>
+                <h2 class="font-bold font-roboto  text-white uppercase text-center">next level experience</h2>
+                <p class=" font-roboto text-slate-200">Feugiat nibh litora semper proin nullam facilisi
+                volutpat ex ullamcorper.</p>
+            </div>
+            <div class="flex flex-col justify-end mt-10 text-slate-200">
+                <p>Copyright © 2021 Jhaka Naka Production, All rights reserved. Present by Mir Hussain</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
